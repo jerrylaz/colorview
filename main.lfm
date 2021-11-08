@@ -1,0 +1,159 @@
+object Form1: TForm1
+  Left = 650
+  Height = 498
+  Top = 276
+  Width = 651
+  Caption = 'Form1'
+  ClientHeight = 498
+  ClientWidth = 651
+  DesignTimePPI = 120
+  LCLVersion = '2.0.10.0'
+  object cbCom: TComboBox
+    Left = 120
+    Height = 28
+    Top = 24
+    Width = 293
+    ItemHeight = 20
+    OnChange = cbComChange
+    OnDropDown = cbComDropDown
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object btnOpen: TButton
+    Left = 437
+    Height = 31
+    Top = 20
+    Width = 94
+    Caption = 'Open'
+    Enabled = False
+    OnClick = btnOpenClick
+    TabOrder = 1
+  end
+  object shp: TShape
+    Left = 120
+    Height = 216
+    Top = 72
+    Width = 296
+    Brush.Color = clBlack
+  end
+  object pnlClear: TPanel
+    Left = 8
+    Height = 63
+    Top = 408
+    Width = 157
+    Caption = '0'
+    Color = clWhite
+    Font.Height = -40
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+  end
+  object pnlRed: TPanel
+    Left = 168
+    Height = 63
+    Top = 408
+    Width = 157
+    Caption = '0'
+    Color = clRed
+    Font.Color = clWhite
+    Font.Height = -40
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+  end
+  object pnlGreen: TPanel
+    Left = 328
+    Height = 63
+    Top = 408
+    Width = 157
+    Caption = '0'
+    Color = clGreen
+    Font.Color = clWhite
+    Font.Height = -40
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+  end
+  object pnlBlue: TPanel
+    Left = 488
+    Height = 63
+    Top = 408
+    Width = 157
+    Caption = '0'
+    Color = clBlue
+    Font.Color = clWhite
+    Font.Height = -40
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+  end
+  object lblData: TLabel
+    Left = 120
+    Height = 20
+    Top = 323
+    Width = 8
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 56
+    Height = 20
+    Top = 323
+    Width = 32
+    Caption = 'Data'
+    ParentColor = False
+  end
+  object btnStart: TButton
+    Left = 439
+    Height = 31
+    Top = 70
+    Width = 94
+    Caption = 'Start'
+    Enabled = False
+    OnClick = btnStartClick
+    TabOrder = 6
+  end
+  object btnStop: TButton
+    Left = 439
+    Height = 31
+    Top = 113
+    Width = 94
+    Caption = 'Stop'
+    Enabled = False
+    OnClick = btnStopClick
+    TabOrder = 7
+  end
+  object btnCalWhite: TButton
+    Left = 440
+    Height = 31
+    Top = 160
+    Width = 94
+    Caption = 'CAL White'
+    Enabled = False
+    OnClick = btnCalWhiteClick
+    TabOrder = 8
+  end
+  object btnCalBlack: TButton
+    Left = 440
+    Height = 31
+    Top = 200
+    Width = 94
+    Caption = 'CAL Black'
+    Enabled = False
+    OnClick = btnCalBlackClick
+    TabOrder = 9
+  end
+  object com: TLazSerial
+    Active = False
+    BaudRate = br__9600
+    DataBits = db8bits
+    Parity = pNone
+    FlowControl = fcNone
+    StopBits = sbOne
+    Device = 'COM1'
+    RcvLineCRLF = False
+    OnRxData = comRxData
+    Left = 32
+    Top = 96
+  end
+end
